@@ -10,7 +10,6 @@
 <link rel="shortcut icon" href="<?php echo BASE_URL.THEME_DIR.THEME; ?>/images/favicon.gif" type="image/x-icon"/> 
 
 <?php
-    $site->addCss(BASE_URL.LIBRARY_DIR.'css/ipContent/ip_content.css');
     $site->addCss(BASE_URL.THEME_DIR.THEME.'/theme.css');
     echo $site->generateHead();
 ?>
