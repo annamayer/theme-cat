@@ -523,20 +523,30 @@ body {
 .middleContainer .ipLayout-level3 {
   font-size: 120%;
 }
-.ipWidget-IpTextImage .ipwImage,
-.ipWidget-IpImage,
-.ipwImage,
-.ipWidget-IpLogoGallery li img {
+.ipWidget-IpImageGallery li,
+.ipWidget-IpLogoGallery li {
   -moz-border-radius: 5px;
   -moz-box-shadow: 2px 2px #D7D7D7;
   -webkit-box-shadow: 2px 2px #D7D7D7;
   background: #E9EAEB;
   border-radius: 5px;
   border: 1px solid #E1E1E1;
-  float: left;
   margin: 5px 13px 8px 0;
   padding: 8px;
+}
+.ipWidget-IpImage img,
+.ipWidget-IpTextImage img {
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 2px 2px #D7D7D7;
+  -webkit-box-shadow: 2px 2px #D7D7D7;
+  background: #E9EAEB;
+  border-radius: 5px;
   position: relative;
+  border: 1px solid #E1E1E1;
+  margin: 5px 13px 8px 0;
+  padding: 8px;
+  float: left;
+  box-sizing: border-box;
 }
 .footerContainer .ipPreviewWidget,
 .footerContainer .ipPreviewWidget * {
