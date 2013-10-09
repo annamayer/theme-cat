@@ -1,0 +1,553 @@
+@buttonColor: #E9EAEB;
+@menuActiveColor: #FF9A66;
+@imageBorderColor: #E1E1E1;
+@topContainerBorderBottomColor: #7D7D7D;
+@topContainerNavBorderBottomColor: #333333;
+@widgetShadow: #D7D7D7;
+// @import '@{ipContentDir}/ipContent.less';
+@import 'less/config.less'; // configuration variables
+@import 'less/menu.less';
+
+@font-face { 
+	font-family: @ipFontFamilyHeadlines; 
+	src: url('css/Delicious-Roman.otf'); 
+} 
+@font-face { 
+	font-family: @ipFontFamilyHeadlines; 
+	font-weight: bold; 
+	src: url('css/Delicious-Bold.otf');
+}
+
+body{
+	background-image: url('images/bgNoLine.png');
+	background-repeat: repeat;
+}
+
+.slides_container{
+	width: 100%;
+	height: auto;
+}
+
+.slides_container img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper{
+	clear: both;
+	margin: 0 auto;
+	max-width: 970px;
+	padding: 0;
+}
+
+.theme{
+	height: 100%;
+}
+
+.topContainer header {
+	clear: both;
+	float: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.topContainer {
+	background-image: url('images/bgNoLine.png');
+	background-repeat: repeat;
+	border-bottom: 5px solid @topContainerBorderBottomColor;
+	clear: both;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#intro {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 15px solid @buttonColor;
+}
+
+.headerLogoBottom{
+	background-color: @logoBackgroundColor;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 0;
+	text-align: left;
+}
+
+.slogan{
+	color: #FFFFFF;
+	font-size: 150%;
+	font-style: normal;
+	font-weight: 100;
+	text-align: center;
+}
+
+.headerLogoTop{
+	background-color: @logoBackgroundColor;
+	padding: 0px 30px 0px 30px;
+	text-align: left;
+}
+
+#logo{
+	position:relative;
+   	float:left;
+   	padding: 0px 0px 30px 20px;
+}
+
+.logo{
+	font-size: 200%;
+}
+
+.headerLogoBottom, .headerLogoTop{
+	padding-bottom: 10px;
+}
+
+.headerLogoBottom, .headerLogoTop, .headerLogoTop a{
+	color: white;
+	font-size: 130%;
+	font-family: @ipFontFamilyHeadlines;
+}
+
+.headerLogoTop a{
+	text-decoration: none;
+}
+
+#intro{
+	clear: both;
+	margin-top: 20px;
+}
+
+
+/*
+	Pagination
+*/
+
+.pagination {
+	float: right;
+	left: -41px;
+	position: relative;
+	top: -24px;
+	z-index: 1000;
+}
+
+.pagination li {
+	float:left;
+	list-style:none;
+	margin:0 1px;
+}
+
+.pagination li a {
+	background-image:url(images/pagination.png);
+	background-position:0 0;
+	display:block;
+	float:left;
+	height:0;
+	overflow:hidden;
+	padding-top:12px;
+	width:12px;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+
+.picture_footer{
+	right:0px;
+	position:absolute;
+	top:-85px;
+}
+
+.slides_container a {
+	display:block;
+	height:270px;
+	width:980px;
+}
+
+.slides_container a img {
+	display:block;
+
+}
+
+
+
+/***************************************************
+				       MENU
+***************************************************/
+.topContainer nav {
+	display: block;
+	position: relative;
+	padding-top: 47px;
+	padding-bottom: 10px;
+}
+
+.topContainer nav ul li {
+	float: left;
+	line-height: normal;
+	margin-left: 15px;
+}
+
+.topContainer ol,  .topContainer ul {
+	list-style: none;
+}
+
+.topContainer nav{
+	float: right;
+
+}
+
+.topContainer nav ul li{
+	line-height:normal;
+	margin-left:15px;
+}
+
+.topContainer nav ul li a{
+	background-color:transparent;
+	border-bottom: 3px solid @topContainerNavBorderBottomColor;
+	color:white;
+	display:block;	/* IE6, IE7 line height fix */
+	font-size: 150%;
+	font-weight:normal;
+	margin-top:3px;
+	padding:5px;
+	text-transform:capitalize;
+    font-family: @ipFontFamily;
+    text-decoration:none;
+}
+
+.topContainer nav ul li a:hover{
+	color: @menuActiveColor;
+}
+
+.introText{
+	color: #D6D6D6;
+	font-family: @ipFontFamily;
+	font-size: 140%;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.3;
+	margin-bottom: 16px;
+	margin-left: 15px;
+	margin-top: 7px;
+	text-align: left;
+	text-transform: none;
+}
+
+.introText h1{
+	font-size: 130%;
+	font-style: normal;
+	line-height: 250%;
+}
+
+
+/* Main container */
+
+
+.group1 {
+	background:transparent;
+	float: left;
+	margin-bottom:10px;
+	padding: 15px;
+	position: relative;
+	width: 33%;
+	    -webkit-box-sizing: border-box; 
+       -moz-box-sizing: border-box;   
+            box-sizing: border-box; 
+}
+	
+.group2 {
+	background:transparent;
+	float: left;
+	margin-bottom:10px;
+	padding: 15px;
+	position: relative;
+	width: 34%;
+	    -webkit-box-sizing: border-box; 
+       -moz-box-sizing: border-box;   
+            box-sizing: border-box; 
+}
+	
+.group3 {
+	background:transparent;
+	float: left;
+	margin-bottom:10px;
+	padding: 15px;	
+	position: relative;
+	width: 33%;
+	    -webkit-box-sizing: border-box; 
+       -moz-box-sizing: border-box;   
+            box-sizing: border-box; 
+}
+	
+.group6 {
+	background-image: url(images/top.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	float: left;
+	margin-bottom: 20px;
+	margin-top:16px;
+	padding-bottom:15px;
+	padding-top:15px;
+	position: relative;
+	width: 100%;
+}
+	
+/***************************************************
+			        FOOTER
+***************************************************/
+.bottomUpperContainer {
+	background-color: @logoBackgroundColor;
+	background-position:left top;
+	background-repeat:repeat-x;
+	clear:both;
+	color: white;
+	width:100%;
+}
+
+.bottomLowerContainer {
+	background-color: #333333;
+	background-image: url('images/bgNoLine.png');
+	background-position:left top;
+	background-repeat:repeat-x;
+	clear:both;
+	height: 150px;
+	vertical-align: bottom;
+	width:100%;
+}
+
+.footerBottom{
+	padding-top: 100px;
+}
+
+.footerTop {
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+.theme footer{
+	position:relative;
+}
+
+.FooterTwo{
+	color:white;
+	float: right;
+	font-size: 80%;
+	text-align: center;
+	width: 50%;
+}
+
+.FooterTree{
+	color:white;
+	float: left;
+	font-size: 80%;
+	text-align: center;
+	width: 50%;
+}
+
+.container{
+	background-color:transparent;
+    margin:0 auto;
+    width:980px;
+}
+
+.footer_left{
+	float:left;
+	margin-right:76px;
+	margin-top:15px;
+	padding:12px;
+	width:170px;
+}
+
+/* CONTENTS */
+
+ .middleContainer{
+	background-color: @bodyBackgroundColor;
+	background-position: left top;
+	background-repeat: repeat-x;
+	color: #3F3E3C;
+	height:100%; 
+	line-height: 1.5;
+	margin:0 0 1px; 
+}
+	
+
+.middleContainer, .bottomLowerContainer, .bottomUpperContainer, .bottomUpperContainer h1{
+	font-family: @ipFontFamily;
+}
+
+.middleContainer, .bottomLowerContainer, .bottomUpperContainer{
+	font-size: @ipFontSize;
+}
+
+.signature{
+	color: @ipTextColorInverted;
+	font-size: 100%;
+}
+
+.spacerMain{
+	padding-top: 20px;
+}
+
+/* IP WIDGETS */
+
+.footerTop .ipwTitle{
+	font-size: 160%;
+}
+
+.footerTop .ipWidget-IpText {
+	font-size: 80%;	
+}
+
+.ipWidget-IpText {
+	clear: both;
+}
+
+.middleContainer .ipPreviewWidget{
+	color: @ipTextColor;
+}
+
+.middleContainer .ipwTitle{
+	clear: both;
+	color: @headingColor;
+	font-family: @ipFontFamily;
+	font-weight: normal;
+}
+
+.middleContainer .ipLayout-level1{
+	font-size: 160%;
+}
+
+.middleContainer .ipLayout-level2{
+	font-size: 140%;
+}
+
+.middleContainer .ipLayout-level3{
+	font-size: 120%;
+}
+
+.ipWidget-IpTextImage .ipwImage, .ipWidget-IpImage, .ipwImage, .ipWidget-IpLogoGallery li img{
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 2px 2px @widgetShadow;
+	-webkit-box-shadow: 2px 2px @widgetShadow;
+	background: @buttonColor;
+	border-radius: 5px;
+	border: 1px solid @imageBorderColor;
+	float: left;
+	margin:5px 13px 8px 0;
+	padding: 8px;
+	position:relative;
+}
+
+.footerContainer .ipPreviewWidget, .footerContainer .ipPreviewWidget *{
+	color: @ipTextColorInverted;
+}
+
+.ipModuleForm .ipmControlSubmit {
+	-moz-box-shadow: 2px 2px #D7D7D7;
+	-webkit-box-shadow: 2px 2px #D7D7D7;
+	background: @buttonColor;
+	color: #FF9966;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	font-family: @ipFontFamily;
+	font-weight: bold;
+	margin-top: 12px;
+	padding: 9px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+
+.ipModuleForm .ipmControlSubmit{
+	font-size: 120%;
+}
+
+.ipWidget-IpFaq .ipwQuestion, .ipWidget-IpFaq .ipwQuestion a{
+	color: @ipTextColor;
+	font-family: @ipFontFamily;
+}
+
+.ipmType-captcha .ipmControl img {
+	padding-top: 10px;
+}
+
+.ipmControlInput, .ipmControlTextarea{
+	font-size: 100%;
+}
+
+.ipmControlTextarea {
+	font-family: @ipFontFamily;
+}
+
+.ipModuleForm .ipmControlSubmit:hover{
+	background-color: darken(@buttonColor, 5%);	
+}
+
+.ipmErrorMessage{
+	font-family: @ipFontFamily;
+	font-size: 100%;
+}
+
+.ipWidget{
+	padding: 0 10px;
+}
+
+
+.ipWidget, .ipmControlInput, .ipmControlSelect{
+	font-family: @ipFontFamily;	
+}
+
+@media (max-width: 480px) {
+
+	.FooterOne, .FooterTwo, .FooterTree{
+		padding-bottom: 5px;
+	}
+	
+	#intro{
+		border: 5px solid #E9EAEB;
+	}
+
+	.group1, .group2, .group3, .group4, .group5, .group6{
+		width: 100%;
+	}
+
+	#logo {
+		float: none;
+		margin: 0 auto;
+		padding: 5px 0 0 0;
+	}
+
+	.logo {
+		text-align: center;
+	}
+
+	.topContainer nav {
+		padding-top: 0px;
+	}
+
+	.body img{
+		width: 100%;
+		height: auto;
+	}
+
+	.topContainer nav ul li{
+		margin: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	.picture_footer{
+		display: none;
+	}
+
+	.ipWidget-IpLogoGallery li {
+		width: 100%;
+	}
+
+	.ipWidget-IpLogoGallery li img{
+		width: 100%;
+	}
+
+}

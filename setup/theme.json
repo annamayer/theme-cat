@@ -1,0 +1,52 @@
+{
+    "title": "Cat template",
+    "version": "1.00",
+    "doctype": "HTML5", /* HTML5, XHTML1_STRICT, XHTML1_TRANSITIONAL, XHTML1_FRAMESET, HTML4_STRICT, HTML4_TRANSITIONAL, HTML4_FRAMESET  */
+    "thumbnail": "thumbnail.png",
+    "author": "ImpressPages",
+    "widget": { /* Image cropping settings for widgets. Require theme reinstall to take affect. */
+        "image": {
+            "width": 941,
+            "height": 304,
+            "bigWidth": 941, /* Lightbox */
+            "bigHeight": 304 /* Lightbox */
+        },
+        "imageGallery": {
+            "width": 295,
+            "height": 164,
+            "bigWidth": 941, /* Lightbox */
+            "bigHeight": 600 /* Lightbox */
+        },
+        "logoGallery": {
+            "width": 295,
+            "height": 295
+        },
+        "textImage": {
+            "width": 295,
+            "height": 600, /* height is flexible, setting the max */
+            "bigWidth": 941, /* Lightbox */
+            "bigHeight": 600 /* Lightbox */
+        }
+    },
+    "options": [
+            {
+            "label": "Body background color",
+            "name": "bodyBackgroundColor",
+            "type": "color",
+            "default": "#E4E4E4"
+        },
+        {           
+            "label": "Logo background color",
+            "name": "logoBackgroundColor",
+            "type": "color",
+            "default": "#FF6666"
+        },
+        {           
+            "label": "Text headings color",
+            "name": "headingColor",
+            "type": "color",
+            "default": "#FF6666"
+        }
+    ]
+
+}
