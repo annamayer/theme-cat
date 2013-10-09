@@ -1396,3 +1396,7 @@ body {
     width: 100%;
   }
 }
+.mceContentBody {
+  background-image: none;
+  background-color: #E4E4E4;
+}
